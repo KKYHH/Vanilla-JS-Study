@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Review</title>
+    <title>NavBar</title>
     <!-- Styles -->
     <link
       rel="stylesheet"
@@ -14,36 +14,78 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="title">
-        <h1>Our Reviews</h1>
-        <div class="line"></div>
-      </div>
-      <div class="box">
-        <div class="box-content">
-          <img id="profile" src="./public/mainCharacter.png" alt="img" />
-          <div class="box-title">
-            <h2 id="author">잔디도치</h2>
-            <h4 id="job">잔디일기 캐릭터</h4>
-          </div>
-          <p id="info">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
-          </p>
-          <div>
-            <button class="prevBtn">
-              <i class="fa-solid fa-arrow-left"></i>
-            </button>
-            <button class="nextBtn">
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-          <button class="btn-2">Suprise Me</button>
+    <div class="section">
+      <div class="Nav">
+        <div class="logo">
+          <h1>Coding</h1>
         </div>
+        <div>
+          <ul class="category">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="icon">
+            <li>
+              <a href="/"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="fa-brands fa-behance"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="fa-solid fa-gem"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <button class="toggle">
+            <i class="fa-solid fa-bars bar"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="hiddenSection">
+      <div class="hiddenBar">
+        <ul>
+          <li class="hiddenList">
+            <a class="hiddenListMenu" href="/">Home</a>
+          </li>
+          <li class="hiddenList">
+            <a class="hiddenListMenu" href="/">About</a>
+          </li>
+          <li class="hiddenList">
+            <a class="hiddenListMenu" href="/">Projects</a>
+          </li>
+          <li class="hiddenList">
+            <a class="hiddenListMenu" href="/">Contact</a>
+          </li>
+          <div class="hiddenIcon">
+            <li>
+              <a href="/"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="fa-brands fa-behance"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="fa-solid fa-gem"></i></a>
+            </li>
+          </div>
+        </ul>
       </div>
     </div>
     <!-- JavaScript-->

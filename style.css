@@ -1,110 +1,121 @@
-@import "/reset.css";
-
 body {
-  font-family: Pretendard;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  height: 100vh;
   background-color: #f9f9f9;
+  margin: 0;
 }
 
-img {
-  background-color: #e0e0e0;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
+a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 5px;
 }
 
-h4 {
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+}
+
+i {
   color: skyblue;
 }
 
-.title {
-  font-size: 30px;
-  padding-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+.logo h1::after {
+  content: " Addict";
+  color: skyblue;
 }
 
-.line {
-  border: solid 3px skyblue;
-  width: 100px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+.logo {
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  max-width: 600px;
+.section {
+  border: solid 1px white;
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
 
-.box-content {
+.Nav {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  justify-content: space-around;
+}
+
+.category {
+  overflow: hidden;
+  color: black;
+  display: flex;
+  font-weight: bold;
+  gap: 30px;
+}
+
+.icon {
+  display: flex;
   gap: 15px;
 }
 
-.box-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.bar {
+  font-size: 25px;
+  transition: color 0.6s ease, transform 0.3s ease;
 }
 
-.box {
-  background-color: white;
-  border: solid 1px rgba(128, 128, 128, 0, 5);
-  border-radius: 10px;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-  padding: 30px;
+.bar:hover {
+  color: black;
+  transform: rotate(90deg);
 }
 
-.prevBtn {
-  border: none;
-  border-radius: 10px;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+.hiddenBar {
+  border: solid 1px white;
   background-color: white;
-  color: skyblue;
   font-weight: bold;
-  padding: 5px 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.nextBtn {
-  border: none;
-  border-radius: 10px;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-  background-color: white;
-  color: skyblue;
-  font-weight: bold;
-  padding: 5px 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.hiddenList {
+  padding: 15px;
+  transition: background-color 0.5s ease, color 0.3s ease;
 }
 
-.btn-2 {
-  border: none;
-  border-radius: 10px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-  background-color: white;
-  color: skyblue;
-  font-weight: bolder;
-  padding: 8px 15px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.btn-2:hover,
-.prevBtn:hover,
-.nextBtn:hover {
-  background-color: #e0e0e0;
+.hiddenList:hover {
+  background-color: skyblue;
   color: white;
+}
+
+.hiddenListMenu {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.hiddenListMenu:hover {
+  color: aqua;
+}
+
+.hiddenIcon {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  gap: 15px;
+}
+
+@media screen and (max-width: 780px) {
+  .icon,
+  .category,
+  .hiddenSection {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .toggle,
+  .hiddenSection,
+  .hiddenBar {
+    display: none;
+  }
 }
