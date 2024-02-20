@@ -1,16 +1,19 @@
-const toggle = document.querySelector('.toggle');
-const hiddenSection = document.querySelector('.hiddenSection');
+const menu = document.querySelector('.menu');
+const sidebar = document.querySelector('.sidebar');
+const xmark = document.querySelector('.xmark');
 
-const openToggle = () => {
-  hiddenSection.classList.toggle('hiddenSection')
-}
-
-const closeToggle = (e) => {
-  if (!hiddenSection.contains(e.target) && !toggle.contains(e.target)) {
-    hiddenSection.classList.add('hiddenSection')
+const closeSidebar = (e) => {
+  if (!sidebar.contains(e.target) && !menu.contains(e.target)) {
+    sidebar.classList.remove('sidebarShow')
   }
-  console.log(hiddenSection.contains(e.target));
 }
 
-toggle.addEventListener('click', openToggle);
-document.addEventListener('mousedown', closeToggle)
+document.addEventListener('mousedown', closeSidebar)
+
+menu.addEventListener('click', () => {
+  sidebar.classList.toggle('sidebarShow');
+});
+
+xmark.addEventListener('click', () => {
+  sidebar.classList.remove('sidebarShow')
+})

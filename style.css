@@ -1,123 +1,129 @@
 body {
+  margin: auto;
   background-color: #f9f9f9;
-  margin: 0;
+}
+
+li {
+  list-style: none;
 }
 
 a {
   text-decoration: none;
-  color: black;
-  letter-spacing: 5px;
 }
 
-ul {
-  padding: 0;
-}
-
-li {
-  list-style-type: none;
-  cursor: pointer;
+section {
+  background-color: white;
+  max-width: 400px;
 }
 
 button {
-  cursor: pointer;
-  background-color: white;
   border: none;
+  cursor: pointer;
+  background: none;
 }
 
-i {
-  color: skyblue;
+h2::after {
+  content: "Addict";
+  color: rgb(78, 157, 188);
 }
 
-.logo h1::after {
-  content: " Addict";
-  color: skyblue;
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
 }
 
-.logo {
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+.sidebarShow {
+  left: 0%;
+  transition: 0.3s ease;
 }
 
-.section {
-  border: solid 1px white;
-  background-color: white;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-}
-
-.Nav {
+.sidebarTop {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
+  padding: 30px;
 }
 
-.category {
-  overflow: hidden;
-  color: black;
+.sidebarMiddle {
   display: flex;
-  font-weight: bold;
-  gap: 30px;
-}
+  flex-direction: column;
 
-.icon {
-  display: flex;
-  gap: 15px;
-}
-
-.bar {
+  margin: 0;
+  padding: 0;
   font-size: 25px;
-  transition: color 0.6s ease, transform 0.3s ease;
 }
 
-.bar:hover {
+.sidebarMiddleList {
+  text-transform: capitalize;
   color: black;
-  transform: rotate(90deg);
+  padding: 20px;
+  transition: 0.3s ease;
 }
 
-.hiddenBar {
-  border: solid 1px white;
-  background-color: white;
-  font-weight: bold;
+.sidebarMiddleList:hover {
+  background-color: rgb(25, 83, 124);
+  color: skyblue;
 }
 
-.hiddenList {
-  padding: 15px;
-  /* transition: background-color 0.5s ease, color 0.3s ease; */
+.sidebarMiddleListText {
+  transition: 0.3s ease;
 }
 
-.hiddenList:hover {
-  background-color: skyblue;
-  color: white;
+.sidebarMiddleListText:hover {
+  translate: 3%;
 }
 
-.hiddenListMenu {
-  color: black;
-  transition: color 0.3s ease;
-}
-
-.hiddenListMenu:hover {
-  background-color: skyblue;
-  color: white;
-  /* color: aqua; */
-}
-
-.hiddenIcon {
+.sidebarBottom {
   display: flex;
   justify-content: center;
-  padding: 30px;
+  align-items: center;
+  font-size: 20px;
   gap: 15px;
+  padding: 30px;
 }
 
-@media screen and (max-width: 780px) {
-  .icon,
-  .category,
-  .hiddenSection {
-    display: none;
+.sidbarBottomList {
+  color: rgb(78, 157, 188);
+}
+
+.xmark {
+  font-size: 30px;
+  color: rgb(181, 29, 29);
+  transition: 0.3s ease;
+}
+
+.xmark:hover {
+  transform: rotate(360deg);
+}
+
+.menu {
+  font-size: 50px;
+  color: skyblue;
+  animation: menuAnimation 2s infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes menuAnimation {
+  0% {
+    font-size: 50px;
+  }
+  50% {
+    font-size: 60px;
+  }
+  100% {
+    font-size: 50px;
   }
 }
 
-@media screen and (min-width: 780px) {
-  .toggle,
-  .hiddenSection,
-  .hiddenBar {
-    display: none;
-  }
+.menu:hover {
+  color: rgb(45, 194, 253);
+}
+
+.sidebarHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
 }
