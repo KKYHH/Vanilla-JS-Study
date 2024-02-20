@@ -3,13 +3,13 @@ const hiddenSection = document.querySelector('.hiddenSection');
 
 const openToggle = () => {
   hiddenSection.classList.toggle('hiddenSection')
-  hiddenSection.classList.add('active')
 }
 
 const closeToggle = (e) => {
   if (!hiddenSection.contains(e.target) && !toggle.contains(e.target)) {
     hiddenSection.classList.add('hiddenSection')
   }
+  console.log(hiddenSection.contains(e.target));
 }
 
 toggle.addEventListener('click', openToggle);

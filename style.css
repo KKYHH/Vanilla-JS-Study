@@ -80,7 +80,7 @@ i {
 
 .hiddenList {
   padding: 15px;
-  transition: background-color 0.5s ease, color 0.3s ease;
+  /* transition: background-color 0.5s ease, color 0.3s ease; */
 }
 
 .hiddenList:hover {
@@ -94,7 +94,9 @@ i {
 }
 
 .hiddenListMenu:hover {
-  color: aqua;
+  background-color: skyblue;
+  color: white;
+  /* color: aqua; */
 }
 
 .hiddenIcon {
