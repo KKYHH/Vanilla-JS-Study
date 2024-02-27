@@ -1,19 +1,23 @@
-const menu = document.querySelector('.menu');
-const sidebar = document.querySelector('.sidebar');
-const xmark = document.querySelector('.xmark');
+const banner = document.querySelector('.banner')
+const modal = document.querySelector('.modal')
+const bannerBtn = document.querySelector('.banner-btn')
+const modalBtn = document.querySelector('.modal-btn')
 
-const closeSidebar = (e) => {
-  if (!sidebar.contains(e.target) && !menu.contains(e.target)) {
-    sidebar.classList.remove('sidebarShow')
+modal.classList.add('modal-show')
+
+bannerBtn.addEventListener('click', () => {
+  modal.classList.remove('modal-show')
+
+})
+
+modalBtn.addEventListener('click', () => {
+  modal.classList.add('modal-show')
+})
+
+const closeModal = (e) => {
+  if (!modal.contains(e.target)) {
+    modal.classList.add('modal-show')
   }
 }
 
-document.addEventListener('mousedown', closeSidebar)
-
-menu.addEventListener('click', () => {
-  sidebar.classList.toggle('sidebarShow');
-});
-
-xmark.addEventListener('click', () => {
-  sidebar.classList.remove('sidebarShow')
-})
+document.addEventListener('mousedown', closeModal)
