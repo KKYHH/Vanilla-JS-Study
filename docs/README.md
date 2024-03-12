@@ -1,9 +1,8 @@
 ## 🌟 기능 목록
 
-### 🔨 Modal
+### 🔨 Menu
 
-- [x] OPEN MODAL을 눌렀을 떄 모달창이 나타난다
-- [ ] Modal이 나타나면 백그라운드가 blur 처리 된다
-- [x] Modal X 버튼을 hover 했을 때 font size가 커지는 애니메이션이 생긴다
-- [x] Modal X 버튼을 눌렀을 때 Modal이 사라진다
-- [x] Modal X 버튼 이외에 Modal 외부 지역을 클릭하면 Modal이 사라진다
+- [x] DOMContentLoaded를 사용하여 DOM요소가 로드된 후에 버튼 이벤트가 추가되게한다
+- [x] 버튼을 누를 수 있는 nav를 구현한다
+- [x] All 버튼을 클릭하면 모든 상품이 보인다
+- [x] 501,502,505,LVC 버튼 중 하나를 클릭하면 해당 클래스 상품만 보인다

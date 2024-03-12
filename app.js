@@ -1,23 +1,37 @@
-const banner = document.querySelector('.banner')
-const modal = document.querySelector('.modal')
-const bannerBtn = document.querySelector('.banner-btn')
-const modalBtn = document.querySelector('.modal-btn')
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('.navbtn-all').addEventListener('click', function () {
+    showAllProducts();
+  });
 
-modal.classList.add('modal-show')
+  document.querySelector('.navbtn-501').addEventListener('click', function () {
+    showProductsByClass('sell-501');
+  });
 
-bannerBtn.addEventListener('click', () => {
-  modal.classList.remove('modal-show')
+  document.querySelector('.navbtn-502').addEventListener('click', function () {
+    showProductsByClass('sell-502');
+  });
 
-})
+  document.querySelector('.navbtn-505').addEventListener('click', function () {
+    showProductsByClass('sell-505');
+  });
 
-modalBtn.addEventListener('click', () => {
-  modal.classList.add('modal-show')
-})
+  document.querySelector('.navbtn-LVC').addEventListener('click', function () {
+    showProductsByClass('sell-LVC');
+  });
+});
 
-const closeModal = (e) => {
-  if (!modal.contains(e.target)) {
-    modal.classList.add('modal-show')
-  }
+function showAllProducts() {
+  document.querySelectorAll('.sell').forEach(function (product) {
+    product.style.display = 'block';
+  });
 }
 
-document.addEventListener('mousedown', closeModal)
+function showProductsByClass(className) {
+  document.querySelectorAll('.sell').forEach(function (product) {
+    if (product.classList.contains(className)) {
+      product.style.display = 'block';
+    } else {
+      product.style.display = 'none';
+    }
+  });
+}
