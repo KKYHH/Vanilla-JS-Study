@@ -6,10 +6,6 @@ li {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-}
-
 .logo {
   height: 30px;
 }
@@ -55,7 +51,6 @@ a {
   align-items: center;
   gap: 50px;
   padding: 15px;
-  /* width: calc(100%); */
 }
 
 .title {
@@ -82,7 +77,7 @@ a {
 }
 
 .menu-1 {
-  background-image: url(./img/Levis-bg2_1.png);
+  background-image: url(../img/Levis-bg2_1.png);
   background-size: contain;
   color: black;
   display: flex;
