@@ -1,11 +1,13 @@
 const video = document.querySelector('.video');
 const tabBtn = document.querySelector('.tab-btn');
 const btnBox = document.querySelector('.btn-box');
+const textBox = document.querySelector('.text-box');
 const bearImg = document.querySelector('.bear')
 const bearHello = document.querySelector('.bear-hello')
 
 window.addEventListener('load', () => {
   video.play();
+  textBox.style.opacity = '100'
   tabBtn.style.opacity = '100'
   btnBox.style.opacity = '100'
   bearHello.style.opacity = '100'
