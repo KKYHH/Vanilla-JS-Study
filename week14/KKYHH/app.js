@@ -81,7 +81,7 @@ const removeFromLocaclStorage = (id) => {
   let items = getLocalStorage();
 
   items = items.filter((item) => {
-    if (item.id !== id) return item;
+    if (item.id !== id) item;
   })
   localStorage.setItem('list', JSON.stringify(items));
 }

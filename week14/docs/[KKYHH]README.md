@@ -1,7 +1,10 @@
 ## 🌟 기능 목록
 
-### 🔨 한글입숨 생성기
+### 🔨 CRUD 만들기
 
-시간 관계상 영상을 보고 따라서 공부했습니다 🙇
+CRUD 영상을 보면서 공부 했습니다 🙇
 
-- [x] innerHTML이 아닌 insertAdjacentHTML 사용
+- [x] insertAdjacentHTML 시도
+- [x] ()=> 단일표현 시도
+- [x] if() 단일표현 시도
+- [ ] 모듈화
