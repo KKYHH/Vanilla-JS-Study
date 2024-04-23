@@ -15,13 +15,20 @@
   </head>
   <body>
     <section class="section-center">
-      <h3>한글입숨</h3>
-      <form class="lorem-form">
-        <label for="amount">단락:</label>
-        <input type="number" name="amount" id="amount" placeholder="개수" />
-        <button type="submit" class="btn">생성</button>
+      <form class="grocery-form">
+        <p class="alert"></p>
+        <h3>grocery bud</h3>
+        <div class="form-control">
+          <input type="text" id="grocery" placeholder="e.g. text" />
+          <button type="submit" class="submit-btn">submit</button>
+        </div>
       </form>
-      <article class="lorem-text">안녕하세요 한글입숨 입니다.</article>
+      <div class="grocery-container">
+        <div class="grocery-list">
+          <article class="grocery-item"></article>
+        </div>
+        <button type="button" class="clear-btn">clear items</button>
+      </div>
     </section>
     <!-- JavaScript-->
     <script
